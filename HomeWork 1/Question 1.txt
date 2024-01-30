@@ -15,5 +15,5 @@ Frequency of instruction fetch:  597309
 
 spice.din
 Frequency of read
-Frequency of write
+Frequency of write: 66538
 Frequency of instruction fetch: 782764
