@@ -1,0 +1,25 @@
+cc1.din
+Frequency of read: 130655
+Frequency of write: 104513
+Frequency of instruction fetch:  597309
+
+spice.din
+Frequency of read
+Frequency of write
+Frequency of instruction fetch: 782764
+
+
+
+
+
+
+gnuplot> set xlabel "Address (Decimal)"
+gnuplot> set ylabel "Number of Occurrences"
+gnuplot> set title "Address Occurrences Plot"
+gnuplot> set xrange [0:1000]  # Set the desired range on the x-axis
+gnuplot> set grid
+gnuplot> 
+gnuplot> plot "spice-writedata-decimal.txt" using 1:2 with linespoints title "Occurrences"
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+gnuplot> plot "spice-writedata-decimal.txt" 
+

@@ -1,0 +1,42 @@
+Matrix Multiplication with column in the inner loop:
+
+Time taken for integer matrix multiplication: 25.197 seconds
+Time taken for integer matrix multiplication: 23.877 seconds
+Time taken for integer matrix multiplication: 23.894 seconds
+Time taken for integer matrix multiplication: 24.012 seconds
+Time taken for integer matrix multiplication: 23.236 seconds
+					 Avg: 24.043 seconds
+
+Time taken for double matrix multiplication: 32.646 seconds
+Time taken for double matrix multiplication: 32.886 seconds
+Time taken for double matrix multiplication: 33.586 seconds
+Time taken for double matrix multiplication: 33.292 seconds
+Time taken for double matrix multiplication: 33.935 seconds
+					Avg: 33.269 seconds
+
+
+
+
+
+Matrix Multiplication with row in the inner loop:
+
+Time taken for integer matrix multiplication: 21.407 seconds
+Time taken for integer matrix multiplication: 21.544 seconds
+Time taken for integer matrix multiplication: 22.738 seconds
+Time taken for integer matrix multiplication: 22.088 seconds
+Time taken for integer matrix multiplication: 21.787 seconds
+					 Avg: 21.912 seconds
+
+
+Time taken for double matrix multiplication: 28.602 seconds
+Time taken for double matrix multiplication: 30.163 seconds
+Time taken for double matrix multiplication: 32.13 seconds
+Time taken for double matrix multiplication: 31.334 seconds
+Time taken for double matrix multiplication: 31.477 seconds
+ 					Avg: 30.741 seconds
+
+
+
+
+
+

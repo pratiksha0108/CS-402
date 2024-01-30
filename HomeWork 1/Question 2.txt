@@ -1,0 +1,42 @@
+2. There are 4 programs "DoubleMultiplication.class", "DoubleRowMultiplication.class" , "IntegerMultiplication.class" and "IntegerRowMultiplication.class". 
+
+The two systems I will be testing have the following set ups.
+
+Manufactuer: Microsoft Corporation; CPU Type / Processor: AMD Ryzen 7 5700U with Radeon Graphics, 1801 Mhz, 8 Core(s), 16 Logical Processor(s)
+Installed Physical Memory (RAM)	16.0 GB
+OS: Microsoft Windows 11 Home Single Language
+Compiler: Used Eclipse IDE
+
+Manufactuer: Apple; CPU Type: 8-Core ;Memory: 16 GB OS: macOS Monterey 12.5.1; Compiler: Used Eclipse IDE
+
+We utilized  int rows1 = 9400, cols1 = 500, cols2 = 1280 matrix for the calculation. For the Windows we have the following averages in seconds. These can be found in the "data" folder where we ran each of these caluclation five times and where the table is shown in each case.
+
+Avg Time taken for integer matrix multiplication with column in the inner loop: 24.043 seconds
+
+Avg Time taken for double matrix multiplication with column in the inner loop: 33.269 seconds
+
+Avg Time taken for integer matrix multiplication with row in the inner loop: 21.912 seconds
+
+Avg Time taken for double matrix multiplication with row in the inner loop: 30.741 seconds
+
+
+
+The same dimensions was used for Apple and can also be found in the same folder.
+
+Avg Time taken for integer matrix multiplication with column in the inner loop: 15.034 seconds
+
+Avg Time taken for double matrix multiplication with column in the inner loop: 15.098 seconds
+
+Avg Time taken for integer matrix multiplication with row in the inner loop: 16.789 seconds
+
+Avg Time taken for double matrix multiplication with row in the inner loop: 15.978 seconds
+
+The performance differences we are observing between the Windows and Apple systems in terms of matrix multiplication times can be attributed to various factors, including hardware differences, operating system optimizations, and potential variations in the Eclipse IDE configuration. The Windows system is running an unspecified version of the Windows operating system, while the Apple system is running macOS Monterey 12.5.1.
+Operating systems can have different optimizations, scheduler behaviors, and system-level configurations that influence how applications, including Eclipse and Java, perform.
+
+
+Cost of Windows = $850; Cost of Apple = $1100
+Based on cost effectiveness, I would suggest Windows but it has been known to have a heat throttle and consume resources at the cost of execution time. The real winner is Apple as it utilizes very little resources and is fast but is litttle expensive.
+
+
+No, the performance ratio between two systems is not necessarily the same as the clock rate ratio. The clock rate (measured in Hertz, or cycles per second) is just one factor that can influence the overall performance of a processor, but it does not provide a complete picture.
