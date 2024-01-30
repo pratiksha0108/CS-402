@@ -3,6 +3,30 @@ https://github.com/pratiksha0108/CS-402
 1a. 
 The histograms were generated using gnuplot, with only the first 1000 data points plotted due to the sparse nature of the dataset.
 
+Everything in this homework is done through Linux terminal.
+First both the files "cc1.din" and "spice.din" were converted into .txt where it's content was converted to decimal as it was
+in hexadecimal format.
+awk '{ for(i=1; i<=NF; i++) printf "%d ", "0x"$i; printf "\n" }' input.din > output.txt
+
+
+Used the following awk command to separate the data into different files based on the values in the first column:
+awk '{print > $1".txt"}' data.txt
+This command will create three separate files: 0.txt, 1.txt, and 2.txt. Each file will contain the rows corresponding to the respective label.
+
+Setting Titles and Labels:
+set title "Plot Title"
+set xlabel "X-axis Label"
+set ylabel "Y-axis Label"
+
+Specifying Plot Ranges:
+set xrange [xmin:xmax]
+set yrange [ymin:ymax]
+
+
+gnuplot
+plot "data.txt"  # Plot data from a file
+
+
 Regarding the histogram plots, distinctive access patterns can be observed for each. For example, the instruction fetch pattern for SPICE exhibits a sawtooth-like structure, while the instruction fetch pattern for cc1  displays more of a binary box-like pattern. Examining the SPICE read data graph reveals specific bursts of data reading, whereas the cc1  read data pattern again shows a binary-like structure. Lastly, the write data histogram for SPICE displays a binary structure that tapers off. It's worth noting that we only plotted the first 1000 data points for this specific graph, so the pattern may differ with additional data. In contrast, the write data histogram for cc1 (formerly TeX) appears to exhibit the same binary structure.
 
 Both SPICE and cc1 data can be located in the result folder. Additionally, each individual section has its own text files, such as instruction-fetch, read-data, and write-data.
@@ -14,6 +38,6 @@ Frequency of write: 104513
 Frequency of instruction fetch:  597309
 
 spice.din
-Frequency of read
+Frequency of read: 150699
 Frequency of write: 66538
 Frequency of instruction fetch: 782764
